@@ -51,7 +51,7 @@ app.use(function(err, req, res, next) {
 module.exports = app;
 
 var mongoose=require('mongoose');
-mongoose.connect('mongodb://garen:sasuke@127.0.0.1:27017/test', {auth:{authdb:"admin"}}, function(err){
+mongoose.connect('mongodb://127.0.0.1:27017/test', function(err){
 	if(err) {
 		console.log('connection error:',err);
 	} else {

@@ -5,7 +5,7 @@ var TaskSchema=new mongoose.Schema({
 	status: Boolean,
 	create_at: {
 		type: Date,
-		default: Date.now
+		default: Date.now()
 	}
 });
 
